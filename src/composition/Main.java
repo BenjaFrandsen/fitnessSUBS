@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    FitnessCenter center = new FitnessCenter("Puregym");
+
     public static void main(String[] args) {
         // TODO : Opret et FitnessCenter, og tilføj nogle medlemmer og træningstimer,
         //             så man kan prøve programmet med det samme. Giv det til UI'en.
