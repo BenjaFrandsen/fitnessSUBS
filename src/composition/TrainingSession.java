@@ -16,6 +16,33 @@ public class TrainingSession {
         this.participants = new ArrayList<>();
     }
 
+    public void addParticipant(Member member) {
+        participants.add(member);
+    }
+
+    public void removeParticipants(Member member) {
+        participants.remove(member);
+    }
+
+    public boolean hasAvailableSpaces() {
+        return participants.size() < capacity;
+    }
+
+    public int getAvailableSpaces() {
+        return capacity - participants.size();
+    }
+
+    public void printSession() {
+        System.out.println(" === " + getTitle() + " === ");
+        System.out.println("Instructor: " + getTrainer());
+        System.out.println("Number of participants: " + participants.size());
+        int number = 1;
+        for (Member p : participants) {
+            System.out.println(number + ": " + p.getName() + ", ID: " + p.getMemberID());
+            number++;
+        }
+    }
+
     public String getTitle() {
         return title;
     }
