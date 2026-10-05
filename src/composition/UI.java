@@ -16,6 +16,8 @@ efterhånden som du laver klasserne i trin 2 i TRIN2.md og TRIN3.md
 
 public class UI {
     private Scanner scan; //læser input fra brugeren med en Scanner
+    private FitnessCenter center;
+
 
     // TODO : Når du har lavet FitnessCenter, skal UI'en have et felt til det:
     // private FitnessCenter center;
