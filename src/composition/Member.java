@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Member {
 
 
-    private String name; //3
+    private String name;
     private int memberId;
     private String type;
     private ArrayList<String> memberNames;
