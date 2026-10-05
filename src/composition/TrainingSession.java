@@ -2,7 +2,7 @@ package composition;
 
 import java.util.ArrayList;
 
-public class TrainingSession {
+public class TrainingSession{
 
     private String title;
     private String trainer;
